@@ -10,7 +10,7 @@ body{
 body h1{
     color: #00b6b6;
     margin-left: 40px;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.411);
+    text-shadow: 2px 2px #00000069;
 }
 
 ul {
@@ -30,13 +30,42 @@ ul {
 }
 
 .item{
-    background-color: rgba(0, 0, 0, 0.692);
+    background-color: #000000b0;
     backdrop-filter: blur(4px);
-    padding: 20px;
+    padding: 15px;
     margin-right: 60px;
     border-radius: 10px;
 }
 
-input {
+input[type="checkbox"] {
     accent-color: #005757;
+    background-color: #bbff0080;
+}
+
+input[type="text"]{
+    background-color: #000000b0;
+    border: none;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button{
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: black;
+    border: none;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+
+.list-done {
+    color: gray;
+}
+
+.list-left {
+    color: white;
 }
