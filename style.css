@@ -1,0 +1,42 @@
+body{
+    
+    background-image: linear-gradient(#005757, #bbff0080);
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body h1{
+    color: #00b6b6;
+    margin-left: 40px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.411);
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* <uniquifier>: Use a unique and descriptive class name */
+/* <weight>: Use a value from 400 to 700 */
+
+.list {
+  color: white;
+  font-family: "Edu VIC WA NT Beginner", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.item{
+    background-color: rgba(0, 0, 0, 0.692);
+    backdrop-filter: blur(4px);
+    padding: 20px;
+    margin-right: 60px;
+    border-radius: 10px;
+}
+
+input {
+    accent-color: #005757;
+}
