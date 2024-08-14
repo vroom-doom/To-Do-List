@@ -4,10 +4,10 @@ function select(part){  // Function to tick off a task
     console.log(part);
     var id = "i" + part.toString();
     var elem = document.getElementById(id);
-    var text = elem.innerText;
+    var text = document.getElementById("l"+part).textContent;
     console.log(id);
     elem.classList.toggle("list-done");
-    elem.innerHTML = '<input type="checkbox" checked="true" onclick="onClick(this.id)" id="'+part+'"><s>'+text+'</s><br>';
+    elem.innerHTML = '<input type="checkbox" checked="true" id="'+part+'" onclick="onClick(this.id)"><label id="l'+part+'"><s>'+text+'</s></label><button value="1" onclick="deleteTask('+part+')">Delete</button>';
     console.log(elem.classList);
 }
 
@@ -15,10 +15,10 @@ function deselect(part){    // Function to untick a task
     console.log(part);
     var id = "i" + part.toString();
     var elem = document.getElementById(id);
-    var text = elem.innerText;
+    var text = document.getElementById("l"+part).textContent;
     console.log(id);
     elem.classList.remove("list-done");
-    elem.innerHTML = '<input type="checkbox" onclick="onClick(this.id)" id="'+part+'">'+text+'<br>';
+    elem.innerHTML = '<input type="checkbox" id="'+part+'" onclick="onClick(this.id)"><label id="l'+part+'">'+text+'</label><button value="1" onclick="deleteTask('+part+')">Delete</button>';
     console.log(elem.classList);
 }
 
@@ -35,14 +35,21 @@ function onClick(clicked_id){   // Function to add basic tick / untick functiona
     }
 }
 
-function addContent(text){
+function addContent(text){  // Function to add a new item
     listLength += 1;
     var text = document.getElementById("add").value;
     if (text != null && text != ""){
-        document.getElementById("list-container").innerHTML+= '<li class="item" id="i'+listLength+'"><input type="checkbox" onclick="onClick(this.id)" id="'+listLength+'">'+text+'</li><br>';
+        document.getElementById("list-container").innerHTML+= '<li class="item" id="i'+listLength+'"><input type="checkbox" id="'+listLength+'" onclick="onClick(this.id)"><label id="l'+listLength+'">'+text+'</label><button value="1" onclick="deleteTask('+listLength+')">Delete</button><br></li>';
     }
     
 }
+
+function deleteTask(value){ // Function to remove item
+    var parent = document.getElementById("list-container");
+    var child = document.getElementById("i"+value);
+    parent.removeChild(child);
+}
+
 
 
 
