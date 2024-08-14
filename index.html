@@ -14,12 +14,12 @@
         <div id="added">
             <ul class="list" id="list">
                 <div id="list-container">
-                <li class="item" id="i1"><input type="checkbox" id="1" onclick="onClick(this.id)">Eat</li><br>
-                <li class="item" id="i2"><input type="checkbox" id="2" onclick="onClick(this.id)">Sleep</li><br>
-                <li class="item" id="i3"><input type="checkbox" id="3" onclick="onClick(this.id)">Game</li><br>
-                <li class="item" id="i4"><input type="checkbox" id="4" onclick="onClick(this.id)">Repeat</li><br>
+                <li class="item" id="i1"><input type="checkbox" id="1" onclick="onClick(this.id)"><label id="l1">Eat</label><button value="1" onclick="deleteTask(1)">Delete</button></li>
+                <li class="item" id="i2"><input type="checkbox" id="2" onclick="onClick(this.id)"><label id="l2">Sleep</label><button value="2" onclick="deleteTask(2)">Delete</button></li>
+                <li class="item" id="i3"><input type="checkbox" id="3" onclick="onClick(this.id)"><label id="l3">Game</label><button value="3" onclick="deleteTask(3)">Delete</button></li>
+                <li class="item" id="i4"><input type="checkbox" id="4" onclick="onClick(this.id)"><label id="l4">Repeat</label><button value="4" onclick="deleteTask(4)">Delete</button></li>
                 </div>
-                <input type="text" id="add"><button onclick="addContent()">Add</button>
+                <input type="text" id="add"><button onclick="addContent()" id="add-button">+</button>
             </ul>
         </div>
         
