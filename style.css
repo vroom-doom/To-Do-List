@@ -1,5 +1,4 @@
-body{
-    
+body{   
     background-image: linear-gradient(#005757, #bbff0080);
     height: 100vh;
     font-family: "Roboto", sans-serif;
@@ -17,9 +16,6 @@ ul {
     list-style-type: none;
 }
 
-/* <uniquifier>: Use a unique and descriptive class name */
-/* <weight>: Use a value from 400 to 700 */
-
 .list {
   color: white;
   font-family: "Edu VIC WA NT Beginner", cursive;
@@ -35,6 +31,15 @@ ul {
     padding: 15px;
     margin-right: 60px;
     border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.item button{
+    border-radius: 10px;
+    background-color: rgb(194, 0, 0);
+    margin-left: 84%;
+    align-self: right;
+
 }
 
 input[type="checkbox"] {
@@ -59,7 +64,7 @@ button{
     background-color: black;
     border: none;
     margin-left: 10px;
-    border-radius: 20px;
+    border-radius: 100px;
 }
 
 .list-done {
@@ -69,3 +74,4 @@ button{
 .list-left {
     color: white;
 }
+
