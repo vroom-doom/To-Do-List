@@ -4,4 +4,5 @@ A simple to-do-list webpage
 Current functionality will be added down below:
 1) Tasks can be ticked/unticked
 2) New tasks can be added
-3) Tasks can be deleted 
+3) Tasks can be deleted
+4) Tasks persist after refreshing page
