@@ -1,5 +1,7 @@
 body{   
     background-image: linear-gradient(#005757, #bbff0080);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 100vh;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -26,15 +28,22 @@ ul {
 }
 
 .item{
+    display: block;
+    align-items: center;
+    width:auto;
     background-color: #000000b0;
     backdrop-filter: blur(4px);
     padding: 15px;
     margin-right: 60px;
     border-radius: 10px;
     margin-bottom: 20px;
+    word-wrap: break-word;
+    justify-content: center;
+    
 }
 
 .item button{
+    display: flex;
     border-radius: 10px;
     background-color: rgb(194, 0, 0);
     margin-left: 84%;
@@ -67,6 +76,18 @@ button{
     border-radius: 100px;
 }
 
+button:hover{
+    background-color: rgb(39, 141, 93);
+}
+
+button:active{
+    background-color: rgb(206, 248, 55);
+}
+
+button:visited{
+    background-color: black;
+}
+
 .list-done {
     color: gray;
 }
@@ -75,3 +96,7 @@ button{
     color: white;
 }
 
+#clear {
+    padding: 12px;
+    margin-top: 20px;
+}
