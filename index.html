@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>To Do List</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@700&display=swap" rel="stylesheet">
@@ -14,15 +15,17 @@
         <div id="added">
             <ul class="list" id="list">
                 <div id="list-container">
-                <li class="item" id="i1"><input type="checkbox" id="1" onclick="onClick(this.id)"><label id="l1">Eat</label><button value="1" onclick="deleteTask(1)">Delete</button></li>
+                <!-- <li class="item" id="i1"><input type="checkbox" id="1" onclick="onClick(this.id)"><label id="l1">Eat</label><button value="1" onclick="deleteTask(1)">Delete</button></li>
                 <li class="item" id="i2"><input type="checkbox" id="2" onclick="onClick(this.id)"><label id="l2">Sleep</label><button value="2" onclick="deleteTask(2)">Delete</button></li>
                 <li class="item" id="i3"><input type="checkbox" id="3" onclick="onClick(this.id)"><label id="l3">Game</label><button value="3" onclick="deleteTask(3)">Delete</button></li>
-                <li class="item" id="i4"><input type="checkbox" id="4" onclick="onClick(this.id)"><label id="l4">Repeat</label><button value="4" onclick="deleteTask(4)">Delete</button></li>
+                <li class="item" id="i4"><input type="checkbox" id="4" onclick="onClick(this.id)"><label id="l4">Repeat</label><button value="4" onclick="deleteTask(4)">Delete</button></li> -->
                 </div>
-                <input type="text" id="add"><button onclick="addContent()" id="add-button">+</button>
+                <input type="text" id="add"><button onclick="addContent()" id="add-button">+</button><br>
+                <button id="clear" onclick="clearAll()">Clear</button> 
+                <!-- <button onclick="quack()" >Get to-do</button> -->
             </ul>
         </div>
-        
+         
         
         <script src="script.js"></script>
     </body>
